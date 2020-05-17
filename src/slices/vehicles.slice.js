@@ -29,7 +29,7 @@ export const {
 } = slice.actions;
 
 export const fetchVehicles = () => (dispatch) => {
-  dispatch(fetchVehiclesStart);
+  dispatch(fetchVehiclesStart());
   fetch('https://findfalcone.herokuapp.com/vehicles')
     .then((res) => {
       if (!res.ok) {

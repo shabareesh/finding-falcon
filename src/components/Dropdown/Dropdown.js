@@ -8,12 +8,8 @@ const Dropdown = ({ options, value, onChange }) => (
 
 Dropdown.propTypes = {
   options: PropTypes.array.isRequired,
-  value: PropTypes.object,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   onChange: PropTypes.func.isRequired,
-};
-
-Dropdown.defaultProps = {
-  value: {},
 };
 
 export default Dropdown;

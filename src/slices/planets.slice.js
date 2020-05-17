@@ -29,7 +29,7 @@ export const {
 } = slice.actions;
 
 export const fetchPlanets = () => (dispatch) => {
-  dispatch(fetchPlanetsStart);
+  dispatch(fetchPlanetsStart());
   fetch('https://findfalcone.herokuapp.com/planets')
     .then((res) => {
       if (!res.ok) {
