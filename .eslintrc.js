@@ -27,5 +27,6 @@ module.exports = {
     'semi': ['error', 'always'],
     'object-curly-spacing': ['error', 'always'],
     'require-jsdoc': 0,
+    'arrow-parens': 0,
   },
 };
